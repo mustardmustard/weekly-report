@@ -1,0 +1,7 @@
+# 统一 LF：scripts/compile.sh 需要能在 Linux / macOS / Overleaf 上直接执行
+* text=auto eol=lf
+
+# 二进制文件不做换行转换
+*.png binary
+*.pdf binary
+*.pyc binary

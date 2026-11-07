@@ -200,3 +200,11 @@ python scripts/lint.py output/facts.json --raw output/raw_items.json
 
 本目录自包含，直接复制出去就是一个独立项目；`install.sh`（仓库根）会自动把它
 识别为第二个 skill（扫描 `skills/*/SKILL.md`）。
+
+## 来源与许可
+
+本项目的流水线抽象自另一个 WorkBuddy skill `goushi-writing`
+（构石 / SHIT Journal 伪学术论文生成器，MIT License，© 2026 XBuilderLAB）：
+沿用了它的「唯一真源 + 真实生成图表 + 双通道 PDF 编译 + 逐页自检」工作流，
+但**反转了证据观与语体**——那边允许玩具模型造示意数据，这边只统计真实工作痕迹。
+两行版权声明并列保留在 [LICENSE](LICENSE) 中，以符合 MIT 条款对衍生作品的要求。
