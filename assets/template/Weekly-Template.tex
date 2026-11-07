@@ -1,0 +1,48 @@
+% Weekly-Template.tex — IEEEtran 双栏中文周报模板（weekly-report）
+% 编译方式：XeLaTeX（本地 compile.sh，或 Overleaf 选 XeLaTeX）。
+% build_pdf.py 只读取本文件 \begin{document} 之前的导言区，正文由代码按 facts.json 生成。
+\documentclass[journal]{IEEEtran}
+\usepackage[usenames]{color}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{hhline}
+\usepackage{booktabs}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=0.62in,bmargin=0.9in,lmargin=0.65in,rmargin=0.65in}
+\setlength{\headheight}{18pt}
+\setlength{\headsep}{10pt}
+
+% 中文支持（需 XeLaTeX；compile.sh 会把字体降级到本机实际存在的中文字体）
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
+
+\renewcommand{\abstractname}{\textbf{结论 / SUMMARY}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small WEEKLY REPORT / 工作周报}
+\rhead{\small \thepage}
+
+\begin{document}
+% ---- 以下为占位示例，实际正文由 build_pdf.py 生成 ----
+\title{这里是周报标题}
+\author{作者 / 周期}
+\maketitle
+\begin{abstract}
+这里是一句话结论。
+\end{abstract}
+\section{已完成 / DONE}
+这里是条目。
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\linewidth]{./fig1.png}
+\caption{图的说明（必须写明数据来源）。}
+\end{figure}
+\end{document}

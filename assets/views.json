@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "sections": {
+    "done":      {"label": "已完成",      "order": 1},
+    "doing":     {"label": "进行中",      "order": 2},
+    "risk":      {"label": "风险 / 阻塞", "order": 3},
+    "next":      {"label": "下一步",      "order": 4},
+    "questions": {"label": "待确认",      "order": 5}
+  },
+  "empty_labels": {
+    "risk": "本周无阻塞",
+    "doing": "本周无在途事项",
+    "next": "下周计划待补充",
+    "questions": "无待确认项"
+  },
+  "views": {
+    "full": {
+      "label": "留存版",
+      "audience": "自己 / 复盘",
+      "file": "report.full.md",
+      "format": "markdown",
+      "max_chars": 0,
+      "max_items": {"done": 0, "doing": 0, "risk": 0, "next": 0},
+      "sections": ["done", "doing", "risk", "next", "questions"],
+      "show_sources": true,
+      "show_metrics": true,
+      "show_questions": true,
+      "hide_internal_refs": false,
+      "include_headline": true
+    },
+    "lead": {
+      "label": "组长版",
+      "audience": "直属组长 / 一屏",
+      "file": "report.lead.md",
+      "format": "markdown",
+      "max_chars": 800,
+      "metrics_style": "inline",
+      "max_items": {"done": 6, "doing": 4, "risk": 3, "next": 4},
+      "sections": ["done", "doing", "risk", "next"],
+      "show_sources": false,
+      "show_metrics": true,
+      "show_questions": false,
+      "hide_internal_refs": false,
+      "include_headline": true
+    },
+    "exec": {
+      "label": "上级版",
+      "audience": "上级 / 三眼看完",
+      "file": "report.exec.md",
+      "format": "markdown",
+      "max_chars": 300,
+      "compact": true,
+      "max_items": {"done": 2, "risk": 1, "next": 2},
+      "sections": ["done", "risk", "next"],
+      "show_sources": false,
+      "show_metrics": false,
+      "show_questions": false,
+      "hide_internal_refs": true,
+      "include_headline": true
+    },
+    "chat": {
+      "label": "群消息",
+      "audience": "工作群 / 可直接粘贴",
+      "file": "report.chat.txt",
+      "format": "text",
+      "max_chars": 300,
+      "compact": true,
+      "max_items": {"done": 2, "risk": 1, "next": 2},
+      "sections": ["done", "risk", "next"],
+      "show_sources": false,
+      "show_metrics": false,
+      "show_questions": false,
+      "hide_internal_refs": true,
+      "include_headline": true
+    }
+  }
+}
